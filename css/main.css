@@ -1,12 +1,14 @@
 *{
-box-sizing: border-box;	
+box-sizing: border-box;
 }
 body{
  margin:0;
- background-color: #fff; 
- font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;	
+ background-color: #fff;
+ font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
-
+header{
+  display: block;
+}
 /*seccion de navegador*/
 #main {
     font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -15,7 +17,16 @@ body{
     border: none;
     background: #2c3e50;
 }
-.fixedTop {
+.colum {
+    position: relative;
+    left: 35%;
+    bottom: 30;
+}
+/*.*/
+.nav-menu {
+    display: none;
+}
+.fixed-nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -31,8 +42,11 @@ body{
 }
 
 #main .navbar-brand {
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
+    position: relative;
+    right: 35%;
+    top: 20;
 }
 
 .navbar-brand {
@@ -42,7 +56,7 @@ body{
     margin-right: 5px;
     font-size: 10px;
     line-height: inherit;
- 
+
 }
 li{
     list-style: none;
@@ -60,10 +74,29 @@ overflow: visible;
     border-color: #18bc9c;
     background-color: #18bc9c;
 }
-.navbar.container, .navbar.container-fluid {
+.navbar.first-div, .navbar.container-fluid {
     display: inline-block;
     align-items: center;
-    
+
+}
+
+/*seccion de cabezera profile*/
+ .main-header{
+   padding:180px 0;
+   color: #fff;
+   background: #18bc9c;
+   text-align: center;
+
+ }
+ .main-header  .title {
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 4.75em;
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase;
+ }
+ .main-header .theme {
+    font-size: 30px;
 }
 
 
@@ -71,7 +104,7 @@ overflow: visible;
 section{
 	padding: 100px 0;
 }
-.container{
+.first-div{
 	max-width: 90%;
 	margin-right: auto;
 	margin-left: auto;
@@ -86,20 +119,34 @@ section{
 
 hr{
 overflow: visible;
-height: 0;	
-
+height: 0;
+max-width: 30%;
+border: 3px solid;
+margin-bottom: 6%;
 }
-hr.star1:after, hr.star2:after{
+.star1,.star2{
+  content: '';
+}
+.star1:after{
+  background-color: #FFF;
+}
+.star2:after{
+  background-color: #18bc9c;
+}
+.star1:after, .star2:after{
+  max-width: 50%;
 	content: '\f005';
 	font-family: FontAwesome;
 	position: relative;
-    display: inline-block;
-    font-size: 20px;
+  display: inline-block;
+  font-size: 40px;
+  bottom: 25px;
+  padding: 10px;
 }
 
 .row{
  display: inline-block;
- margin: 0 20px;	
+ margin: 0 20px;
 }
 #portfolio .portfolio-item{
 	margin: 0  0  20px;
@@ -133,7 +180,7 @@ hr.star1:after, hr.star2:after{
 	height: auto;
 }
 figure{
-  display:inline-block;	
+  display:inline-block;
   height: auto;
 
 }
@@ -153,7 +200,7 @@ figure{
 /*boton download*/
 a{
    text-decoration: none;
- }   
+ }
 .btn-outline {
     font-size: 20px;
     margin-top: 15px;
@@ -172,7 +219,7 @@ a{
     padding: 5px 2px;
     line-height: 1.5;
     border-radius: 6px;}
- 
+
 
  .btn {
     display: inline-block;
