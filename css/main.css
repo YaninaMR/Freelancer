@@ -86,6 +86,7 @@ overflow: visible;
    color: #fff;
    background: #18bc9c;
    text-align: center;
+   margin-bottom: 20px;
 
  }
  .main-header  .title {
@@ -102,7 +103,7 @@ overflow: visible;
 
 /*sección de imagenes de portafolio*/
 section{
-	padding: 100px 0;
+	padding: 50px 0;
 }
 .first-div{
 	max-width: 90%;
@@ -178,6 +179,7 @@ margin-bottom: 6%;
 .imgAbout{
 	max-width: 100%;
 	height: auto;
+  margin-bottom: 10px;;
 }
 figure{
   display:inline-block;
@@ -186,11 +188,14 @@ figure{
 }
 
 /*seccion de about descarga*/
+ section h2{
+   font-size: 50px;
+ }
 .aboutFree{
     color: #fff;
     background: #18bc9c;
 }
-.col8{
+.cols{
     position: relative;
     width: 100%;
     min-height: 1px;
@@ -227,3 +232,4 @@ a{
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;}
+/*  */
